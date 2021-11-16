@@ -18,7 +18,7 @@ try
 {
     // Window
     Point tl{ 100, 100 };
-    Lines_window win{ tl,600,400,"lines" };
+    My_window win{ tl,600,400,"lines" };
     return gui_main();
     
 }

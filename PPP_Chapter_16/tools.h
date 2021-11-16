@@ -69,5 +69,25 @@ namespace Graph_lib {
         static void cb_quit(Address, Address);
     };
 
-}
+    //----------------------------------------------------------------------
+    //  1. Make a My_window that’s a bit like Simple_window except that it has
+    //     two buttons, nextand quit.
+
+    struct My_window :Window {
+        My_window(Point xy, int w, int h, const string& title);
+
+    private:
+        // widgets:
+        Button next_button;
+        Button quit_button;
+
+        void next();
+        void quit();
+
+        // callback functions:
+        static void cb_next(Address, Address);
+        static void cb_quit(Address, Address);
+    };
+
+}   // end of Graph_lib namespace
 
